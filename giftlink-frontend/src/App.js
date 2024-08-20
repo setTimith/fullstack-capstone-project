@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import DetailsPage from './components/DetailsPage/DetailsPage';
+import SearchPage from './components/SearchPage/SearchPage';
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
           <Route path="/app/register" element={<RegisterPage />} />
           <Route path="/app/product/:productId" element={<DetailsPage/>} />
         </Routes>
+        <li className="nav-item">
+            <Link className="nav-link" to="/app/search">Search</Link>
+        </li>
         </>
   );
 }
