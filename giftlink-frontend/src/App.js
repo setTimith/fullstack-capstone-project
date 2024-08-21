@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -23,9 +23,6 @@ function App() {
           <Route path="/app/product/:productId" element={<DetailsPage />} />
           <Route path="/app/search" element={<SearchPage />} />
         </Routes>
-        <li className="nav-item">
-            <Link className="nav-link" to="/app/search">Search</Link>
-        </li>
     </>
   );
 }
